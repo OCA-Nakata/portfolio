@@ -74,8 +74,8 @@ html {
   }
 
   .responsive {
-    width: 100%;
-    height: auto;
+    width: 50%;
+    height: 200px;
 }
 
 @media (max-width: 600px) {
