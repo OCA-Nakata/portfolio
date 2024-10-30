@@ -46,9 +46,10 @@ html {
     border: 1px solid #999;
     padding: 3px 10px;
     margin-top: 50px;
+    margin-left: 40%;
     border-radius: 20px;
     height: 2.3em;
-    width: 260px;
+    width:360px;
     overflow: hidden;
   }
   .search_container input[type="text"]{
