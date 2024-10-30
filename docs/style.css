@@ -1,3 +1,7 @@
+*{
+  text-align: center;
+}
+
 /*ボタン*/
 #1,#2 {
     display: flex;
