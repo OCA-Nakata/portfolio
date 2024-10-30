@@ -68,3 +68,15 @@ html {
     top: -10px;
     outline : none;
   }
+
+  .responsive {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .responsive {
+        width: 50%;
+        height: auto;
+    }
+}
