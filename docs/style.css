@@ -85,3 +85,84 @@ html {
         height: auto;
     }
 }
+
+/*案内パネル*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.panel {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  transition: flex 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.panel:hover {
+  flex: 3;  /* ホバーしたパネルを広げる */
+}
+
+.panel:not(:hover) {
+  flex: 0.5; /* ホバーしていないパネルは縮小 */
+}
+
+.panel .content {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.panel:hover .content {
+  opacity: 1;
+}
+
+/* 各パネルの色分け */
+#game {
+  background-color: #FF8A80;
+}
+#video {
+  background-color: #CE93D8;
+}
+#esports {
+  background-color: #81D4FA;
+}
+#ai {
+  background-color: #A5D6A7;
+}
+#design {
+  background-color: #FFD54F;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 10px;
+}
