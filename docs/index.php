@@ -1,5 +1,5 @@
 <?php
-$pdo = new PDO("mysql:host=localhost;dbname=photo_sharing", "root", "");
+$pdo = new PDO("mysql:host=localhost;dbname=sns", "root", "");
 $stmt = $pdo->query("SELECT photos.*, users.username FROM photos JOIN users ON photos.user_id = users.id ORDER BY photos.created_at DESC");
 
 while ($photo = $stmt->fetch()) {
